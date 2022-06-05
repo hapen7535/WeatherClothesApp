@@ -8,8 +8,10 @@ export default function Main() {
         <SafeAreaView style={styles.background}>
             <StatusBar style="default" />
             <Image style={styles.circle} source={circles}/>
-            <Image style={styles.person} source={person}/>
+            <View style={styles.settingPosition}>
             <Text style={styles.maintext}>오늘{"\n"}뭐{"\n"}입지</Text>
+            <Image style={styles.person} source={person}/>
+            </View>
         </SafeAreaView>
     )
 }
@@ -25,10 +27,14 @@ const styles= StyleSheet.create({
         position: "absolute",
     },
     person: {
-        position: "absolute",
+
     },
     maintext: {
         fontSize: 65,
         fontFamily: 'HSDuggobi',
+        color: "#5A4022",
+    },
+    settingPosition: {
+        flexDirection: "column",
     },
 })

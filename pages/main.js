@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, StyleSheet, StatusBar, Image, SafeAreaView, Text } from 'react-native';
-import BottomSheet from "react-native-bottomsheet-reanimated";
 import circles from "../Images/circles.png"
 import person from "../Images/lying.png"
 

@@ -13,6 +13,7 @@
     "react": "17.0.2",
     "react-native": "0.68.2",
     "react-native-bottomsheet-reanimated": "^0.2.0",
+    "react-navigation": "^4.4.4",
     "yarn": "^1.22.18"
   },
   "devDependencies": {

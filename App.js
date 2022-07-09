@@ -110,8 +110,9 @@ import type {Node} from 'react';
 // });
 
 import Main from "./pages/main"
-
-
+import { createStackNavigator, createAppContainer } from '@react-navigation/stack';
+import Main from './pages/main';
+import ViewWeather from './pages/viewWeather';
 const App = () => {
   return (
     <Main/>

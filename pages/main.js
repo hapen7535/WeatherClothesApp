@@ -1,16 +1,18 @@
 import React from 'react';
 import { View, StyleSheet, StatusBar, Image, SafeAreaView, Text } from 'react-native';
-import { NavigationActions } from 'react-navigation';
-import { NavigationContainer } from '@react-navigation/native';
-import mainNavigation from './navigation/mainNavigation';
 import circles from "../Images/circles.png"
 import person from "../Images/lying.png"
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-export default function Main() {
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+
+export default function Main({ navigation }) {
     return(
-        <SafeAreaView style={styles.background}> 
-        <TouchableOpacity>
+        <SafeAreaView style={styles.background}>
+        
+        <TouchableOpacity onPress={() => navigation.navigate("ViewWeather")}>
             <StatusBar style="default" />
             <Image style={styles.circle} source={circles}/>
             <View style={styles.settingPosition}>
@@ -18,6 +20,7 @@ export default function Main() {
             <Image style={styles.person} source={person}/>
             </View>
         </TouchableOpacity>
+
         </SafeAreaView>
     )
 }

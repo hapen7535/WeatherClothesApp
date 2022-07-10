@@ -109,13 +109,16 @@ import type {Node} from 'react';
 //   },
 // });
 
-import Main from "./pages/main"
-import { createStackNavigator, createAppContainer } from '@react-navigation/stack';
-import Main from './pages/main';
-import ViewWeather from './pages/viewWeather';
+// import Main from "./pages/main"
+// import { createStackNavigator, createAppContainer } from '@react-navigation/stack';
+// import ViewWeather from './pages/viewWeather';
+import { NavigationContainer } from '@react-navigation/native';
+import MainNavigation from './navigation/mainNavigation';
 const App = () => {
   return (
-    <Main/>
+    <NavigationContainer>
+      <MainNavigation/>
+    </NavigationContainer>
   );
 }; 
 

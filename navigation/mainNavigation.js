@@ -1,22 +1,20 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Main from '../pages/main';
-import ViewWeather from '../pages/viewWeather';
-
-const mainNavigation = () => {
+import {createNativeStackNavigator} from '@react-navigation/native';
+import main from '../pages/main';
+import Weather from '../pages/viewWeather';
 
 const Stack = createNativeStackNavigator();
 
+const MainNavigation = () => {
+
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Main">
-        <Stack.Screen
-          name="Home"
-          component={Main}
-        />
-        <Stack.Screen name="Weather" component={ViewWeather} />
+      <Stack.Navigator>
+        <Stack.Screen name='Main'component={main}/>
+        <Stack.Screen name='ViewWeather' component={Weather} />
       </Stack.Navigator>
-    </NavigationContainer>
   );
 };
+
+
+export default MainNavigation;

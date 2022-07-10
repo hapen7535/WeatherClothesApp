@@ -4,15 +4,11 @@ import circles from "../Images/circles.png"
 import person from "../Images/lying.png"
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
-
-export default function Main({ navigation }) {
+export default function main({ navigation }) {
     return(
         <SafeAreaView style={styles.background}>
         
-        <TouchableOpacity onPress={() => navigation.navigate("ViewWeather")}>
+        <TouchableOpacity onPress={() => navigation.navigate('ViewWeather')}>
             <StatusBar style="default" />
             <Image style={styles.circle} source={circles}/>
             <View style={styles.settingPosition}>
@@ -22,8 +18,9 @@ export default function Main({ navigation }) {
         </TouchableOpacity>
 
         </SafeAreaView>
-    )
-}
+    );
+};
+
 
 const styles= StyleSheet.create({
     background : {

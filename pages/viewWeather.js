@@ -9,6 +9,10 @@ export default function Weather (){
         // 날씨
         // </Text>
         // </SafeAreaView>
-        <View></View>
+        <View>
+            <Text>
+                eeeee
+            </Text>
+        </View>
     );
 };

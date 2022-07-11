@@ -109,7 +109,7 @@ import type {Node} from 'react';
 //   },
 // });
 
-// import Main from "./pages/main"
+import Main from "./pages/main"
 // import { createStackNavigator, createAppContainer } from '@react-navigation/stack';
 // import ViewWeather from './pages/viewWeather';
 import { NavigationContainer } from '@react-navigation/native';

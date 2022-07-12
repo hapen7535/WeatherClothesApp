@@ -1,8 +1,8 @@
 import BottomSheet from "react-native-bottomsheet-reanimated";
 import React from 'react';
-import { View, SafeAreaView, Text } from "react-native/Libraries/Animated/Easing";
+import { View, SafeAreaView, Text } from "react-native";
 
-export default function Weather (){
+export default function ViewWeather (){
     return(
         // <SafeAreaView>
         // <Text>

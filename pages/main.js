@@ -3,10 +3,8 @@ import { View, StyleSheet, StatusBar, Image, SafeAreaView, Text } from 'react-na
 import circles from "../Images/circles.png"
 import person from "../Images/lying.png"
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { useNavigation } from '@react-navigation/native';
 
-export default function main() {
-    const navigation = useNavigation(); 
+export default function main({navigation}) {
     return(
         <SafeAreaView style={styles.background}>
         

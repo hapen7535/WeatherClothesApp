@@ -9,9 +9,9 @@ const Stack = createNativeStackNavigator();
 const MainNavigation = () => {
 
   return (
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown:false}}>
         <Stack.Screen name='Main'component={main}/>
-        <Stack.Screen name='ViewWeather' component={ViewWeather} />
+        <Stack.Screen name='ViewWeather' component={() => <ViewWeather />} />
       </Stack.Navigator>
   );
 };
